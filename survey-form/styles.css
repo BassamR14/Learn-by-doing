@@ -1,0 +1,50 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1,
+p {
+  text-align: center;
+  margin: 1em auto;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.text-input {
+  width: 100%;
+  margin: 3px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.submit-button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}

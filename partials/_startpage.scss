@@ -1,0 +1,80 @@
+.startpg-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: $startpg-color;
+  font-family: Baskervvile, serif;
+  color: white;
+  font-size: 1.4rem;
+  min-height: 100vh;
+}
+
+.startpg-header {
+  align-self: stretch;
+  background-color: $startpg-headercolor;
+
+  h1 {
+    font-family: Anton, sans-serif;
+    color: $startpg-headlines-color;
+    font-size: 7rem;
+    text-align: center;
+  }
+}
+
+.startpg-text {
+  p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  margin: 20px;
+}
+
+.startpg-nav {
+  flex-grow: 1;
+  h2 {
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    margin: 20px;
+    font-size: 3rem;
+  }
+
+  .startpg-nav-grid {
+    // border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    font-size: 1.3rem;
+    grid-gap: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $startpg-hover-color;
+      border-bottom: 2px solid $startpg-hover-color;
+    }
+  }
+}
+
+.startpg-footer {
+  background-color: $startpg-headercolor;
+  align-self: stretch;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+
+  .footer-headline {
+    color: $startpg-headlines-color;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+}

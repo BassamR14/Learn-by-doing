@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.startpg-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: #2a2a2a;
+  font-family: Baskervvile, serif;
+  color: white;
+  font-size: 1.4rem;
+  min-height: 100vh;
+}
+
+.startpg-header {
+  align-self: stretch;
+  background-color: #1e1e1e;
+}
+.startpg-header h1 {
+  font-family: Anton, sans-serif;
+  color: #ffa500;
+  font-size: 7rem;
+  text-align: center;
+}
+
+.startpg-text {
+  margin: 20px;
+}
+.startpg-text p {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.startpg-nav {
+  flex-grow: 1;
+}
+.startpg-nav h2 {
+  font-family: Oswald, sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 3rem;
+}
+.startpg-nav .startpg-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+  font-size: 1.3rem;
+  grid-gap: 20px;
+}
+.startpg-nav ul {
+  list-style-type: none;
+}
+.startpg-nav a {
+  text-decoration: none;
+  color: white;
+}
+.startpg-nav a:hover {
+  color: #00beef;
+  border-bottom: 2px solid #00beef;
+}
+
+.startpg-footer {
+  background-color: #1e1e1e;
+  align-self: stretch;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+}
+.startpg-footer .footer-headline {
+  color: #ffa500;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=styles.css.map */

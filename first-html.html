@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn by Doing First Edition</title>
+</head>
+
+<body>
+    <h1>The First Try Using HTML </h1>
+    <p>Welcome to my website. It's going to look bad but that's okay since I'm using it to learn HTML. </p>
+    
+    <h2>What I've learned so far</h2>
+    <main>
+        <p>The things I've learned about so far are:</p>
+        <li>
+            <ul>How to add titles using h1,h2 etc</ul>
+            <ul>How to add text using p</ul>
+            <ul>How to add images using img src</ul>
+            <ul>How to add an achor for a website</ul>
+            <ul>How to add lists using li and ul or ol</ul>
+            <ul>How to make text italic or bold using em and strong</ul>
+            <ul>How to add a form</ul>
+            <ul>How to add inputs for radio and checkbox buttons</ul>
+            <ul>A few other things that depend on what I'm working on</ul>
+            
+        </li>
+
+        <!--This created a list but with only 1 point-->
+        <p> Note:This is my first problem I need to solve, I used li and ul to create an unordered list but I only got 1 point. This happened because I switched the position of li and ul. ul should be used first to create an undordered list, then add the list items using li. I wonder what will happen if I keep typing, it seems that the text does not wrap around but continues forever. Would this increase the horizontal size of my website? Let's find out. Nope, the text on the site wrapped and continued on a second line. But it feels weird that it continues on and on in vs code! You can change it under View > Word Wrap </p>
+
+        <ul>
+            <li>How to add titles using h1,h2 etc</li>
+            <li>How to add text using p</li>
+            <li>How to add images using img src</li>
+            <li>How to add an achor for a website using the a element</li>
+            <li>How to add lists using li and ul or ol</li>
+            <li>How to make text italic or bold using em and strong</li>
+            <li>How to add a form</li>
+            <li>How to add inputs for radio and checkbox buttons</li>
+            <li>A few other things that depend on what I'm working on</li>
+        </ul>
+
+        <p> Note:I wonder if it's possible to find and replace ul with li in the code in particular lines instead of changing it for the whole document. I can't find a way, but you can change the element on a line by right clicking on the element you want to change and selecting "rename symbol" </p>
+
+        <p>Now let's add an image!</p>
+        <figure>
+            <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2024/04/wolverine-in-comic-art-by-leinil-yu.jpg?q=50&fit=contain&w=280&dpr=1.5" alt="wolverine-in-comic-art-by-leinil-yu">
+            <figcaption> <strong>Wolverine</strong></figcaption>
+        </figure>
+
+        <p>Now lets add a link to where I got this picture from.I got it from <a href="https://screenrant.com/tag/wolverine/" target="_blank"> <em>here!</em></a></p>
+        
+        
+        <form action=""> 
+            <p>Who is your favorite x-man?
+            <label for="Favxman"> <input type="text" name="Favxman" id="Favxman" placeholder="Favorite X-man" required> </label>
+            <!--Added label, which is useful for assistive technologies-->
+            <button type="submit">Submit</button>
+            </p>
+        </form>
+        
+        <p>Note:I'd like the form and button to be next to the text I wrote. Solution: add the p element in the form, then wrap input + button in the p element. From the Net: "Two commonly used block elements are: p and div . The p element defines a paragraph in an HTML document. The div element defines a division or a section in an HTML document. The p element is a block-level element."   </p>
+
+        <p>All that's left now are radio and checkbox inputs. Let'sa go!</p>
+
+        <fieldset>
+            <legend>Pick your favorite X-man from this roster:</legend>
+            <input type="radio" name="FavoriteXman" id="Wolverine" value="Wolverine" > Wolverine
+            <input type="radio" name="FavoriteXman" id="Rogue" value="Rogue"> Rogue
+            <input type="radio" name="FavoriteXman" id="Cyclops" value="Cyclops"> Cyclops
+            <input type="radio" name="FavoriteXman" id="Nightcrawler" value="Nightcrawler"> Nightcrawler
+            <input type="radio" name="FavoriteXman" id="Gambit" value="Gambit"> Gambit
+            <div>-------------------------</div>
+            <button type="submit">This one!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>What type of powers would you like? Pick two:</legend>
+            <input type="checkbox" name="Powers" id="Pyromancy" value="Pyromancy"> Pyromancy
+            <input type="checkbox" name="Powers" id="Flight" value="Flight"> Flight
+            <input type="checkbox" name="Powers" id="Telikenesis" value="Telikenesis"> Telikenesis
+            <input type="checkbox" name="Powers" id="Invisibility" value="Invisibility"> Invisibility
+            <input type="checkbox" name="Powers" id="Healing Factor" value="healing Factor"> Healing Factor
+            <div>-------------------------</div>
+            <button type="submit">These ones!</button>
+        </fieldset>
+
+        <!--Need to find a better way of adding the button. Maybe at the border of the box, like how the text is there because of legend tag.-->
+            
+        <p> How to limit chosen checkboxes to two? Seems like it can't be done in html but in JS. Ask the teach. Yep, is added by using JS.</p>
+        
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
